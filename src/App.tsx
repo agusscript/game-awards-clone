@@ -1,7 +1,10 @@
+import "./main.scss";
+import Header from "./components/header/Header";
+
 function App() {
   return (
     <>
-      <p>Hello</p>
+      <Header />
     </>
   );
 }
