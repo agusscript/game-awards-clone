@@ -1,11 +1,11 @@
-type AwardsLogoProps = {
+type IconAwardsProps = {
   className: string;
   width: number;
   height: number;
   color: string;
 };
 
-function AwardsLogo({ className, width, height, color }: AwardsLogoProps) {
+function IconAwards({ className, width, height, color }: IconAwardsProps) {
   return (
     <>
       <svg
@@ -22,4 +22,4 @@ function AwardsLogo({ className, width, height, color }: AwardsLogoProps) {
   );
 }
 
-export default AwardsLogo;
+export default IconAwards;

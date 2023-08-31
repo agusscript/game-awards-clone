@@ -1,0 +1,17 @@
+.main-btn {
+  margin: 1.2rem 0;
+  padding: 1.45rem 2rem 1.3rem 2rem;
+  background-color: var(--second-orange);
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  line-height: 0.7rem;
+  transition: all 0.3s;
+  user-select: none;
+
+  &:hover {
+    background-color: whitesmoke;
+    color: var(--second-orange);
+    cursor: pointer;
+  }
+}

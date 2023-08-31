@@ -14,7 +14,32 @@ const data = {
       { id: uuidv4(), title: "PLAYERS' VOICE", href: "#" },
       { id: uuidv4(), title: "FUTURE CLASS", href: "#" },
     ],
+
+    button: {
+      title: "SIGN IN",
+    },
   },
+
+  home: {
+    intro: {
+      date: {
+        month: "DECEMBER 7",
+        year: "2023",
+      },
+      subtitle: "SIGN UP FOR UPDATES",
+      button: {
+        title: "SIGN UP",
+      },
+    },
+
+    news: {},
+
+    explore: {},
+
+    email: {},
+  },
+
+  footer: {},
 };
 
 export const AwardsContext = createContext(data);

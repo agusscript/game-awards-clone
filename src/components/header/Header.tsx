@@ -1,5 +1,6 @@
 import "./Header.scss";
-import AwardsLogo from "../common/AwardsLogo";
+import AwardsLogo from "../common/IconAwards";
+import signInImage from "../../assets/login-icon.svg";
 import { useContext } from "react";
 import { AwardsContext } from "../../provider/Provider";
 
@@ -10,7 +11,6 @@ function Header() {
     <>
       <header className="header">
         <div className="wrapper">
-
           <AwardsLogo className="header-logo" width={45} height={45} color="whitesmoke" />
 
           <nav className="header-nav">
@@ -26,10 +26,9 @@ function Header() {
           </nav>
 
           <button className="header-sign-btn">
-            <img src="src\assets\login-icon.svg" alt="login icon" />
-            SIGN IN
+            <img src={signInImage} alt="login icon" />
+            {header.button.title}
           </button>
-
         </div>
       </header>
     </>
