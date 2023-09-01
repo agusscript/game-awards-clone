@@ -1,0 +1,46 @@
+.explore {
+  min-height: 100vh;
+  background-image: url(../../../assets/home-explore-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-content {
+  .title {
+    margin: 3rem 0;
+    color: transparent;
+    font-size: 4.6rem;
+    background-image: url(../../../assets/text_mask.jpg);
+    background-size: auto;
+    background-position: 90%;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .options-container {
+    display: grid;
+    place-items: center;
+    gap: 2.6rem;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+
+    .explore-img {
+      margin-bottom: 1.8rem;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      transition: all ease-out 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    }
+  }
+}
