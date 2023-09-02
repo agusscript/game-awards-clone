@@ -17,7 +17,10 @@ function Header() {
             <ul className="header-ul">
               {header.nav.map((item) => (
                 <li className="header-li" key={item.id}>
-                  <a className="header-a" href={item.href}>
+                  <a
+                    className={`header-a ${item.active ? "active" : ""}`}
+                    href={item.href}
+                  >
                     {item.title}
                   </a>
                 </li>

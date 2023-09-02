@@ -1,7 +1,8 @@
-import Explore from "./Explore/Explore";
 import "./Home.scss";
 import Intro from "./Intro/Intro";
 import News from "./News/News";
+import Explore from "./Explore/Explore";
+import Email from "./Email/Email";
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
 
       <Explore />
 
-      <section className="home-email"></section>
+      <Email />
     </div>
   );
 }

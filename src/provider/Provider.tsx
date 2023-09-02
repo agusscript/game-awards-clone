@@ -4,7 +4,7 @@ import { createContext } from "react";
 const data = {
   header: {
     nav: [
-      { id: uuidv4(), title: "HOME", href: "#" },
+      { id: uuidv4(), title: "HOME", href: "#", active: true },
       { id: uuidv4(), title: "NEWS", href: "#" },
       { id: uuidv4(), title: "ABOUT", href: "#" },
       { id: uuidv4(), title: "REWIND", href: "#" },

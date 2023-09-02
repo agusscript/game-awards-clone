@@ -1,0 +1,89 @@
+.email {
+  min-height: 100vh;
+  background-image: url(../../../assets/home-email-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.content {
+  max-width: 400px;
+
+  &-title {
+    font-size: 6.5rem;
+    height: 8rem;
+
+    &-span {
+      font-size: inherit;
+      color: var(--second-orange);
+    }
+  }
+
+  &-subtitle {
+    font-size: 3.65rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.form {
+  max-width: 400px;
+  width: 100%;
+  padding-top: 2rem;
+
+  &-input-name,
+  &-input-email {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 0.85rem 0.7rem;
+    border-radius: 0.2rem;
+    margin-bottom: 1.2rem;
+    color: var(--black);
+    transition: all ease-out 0.3s;
+
+    &::placeholder {
+      letter-spacing: 0.1rem;
+      color: var(--black);
+    }
+
+    &:focus {
+      &::placeholder {
+        color: rgb(172, 172, 172);
+      }
+    }
+  }
+
+  &-label-check-agree {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    input[type="checkbox"] {
+      width: 46px;
+      height: 46px;
+    }
+
+    .check-span {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      max-width: 80%;
+      line-height: 1.2rem;
+    }
+  }
+
+  &-button {
+    padding: 1.44rem 1.68rem;
+  }
+}
