@@ -14,4 +14,8 @@
     color: var(--second-orange);
     cursor: pointer;
   }
+
+  &:active {
+    background-color: var(--black);
+  }
 }

@@ -15,10 +15,15 @@
   align-items: start;
   justify-content: center;
   gap: 4rem;
+
+  @media screen and (max-width: 830px) {
+    gap: 0.5rem;
+  }
 }
 
 .content {
   max-width: 400px;
+  text-align: center;
 
   &-title {
     font-size: 6.5rem;
@@ -28,12 +33,21 @@
       font-size: inherit;
       color: var(--second-orange);
     }
+
+    @media screen and (max-width: 450px) {
+      font-size: 4rem;
+      height: auto;
+    }
   }
 
   &-subtitle {
     font-size: 3.65rem;
     line-height: 3.4rem;
     letter-spacing: 0.2rem;
+
+    @media screen and (max-width: 450px) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -41,6 +55,10 @@
   max-width: 400px;
   width: 100%;
   padding-top: 2rem;
+
+  &.inactive {
+    display: none;
+  }
 
   &-input-name,
   &-input-email {
@@ -71,8 +89,16 @@
     gap: 1rem;
 
     input[type="checkbox"] {
-      width: 46px;
-      height: 46px;
+      appearance: none;
+      width: 45px;
+      height: 45px;
+      background-color: transparent;
+      border: 5px solid var(--second-orange);
+      cursor: pointer;
+
+      &:checked {
+        background-color: var(--second-orange);
+      }
     }
 
     .check-span {
@@ -85,5 +111,54 @@
 
   &-button {
     padding: 1.44rem 1.68rem;
+  }
+
+  &-text-email-error,
+  &-text-check-error {
+    font-size: 1.08rem;
+    letter-spacing: 0.1rem;
+    visibility: hidden;
+
+    &.active {
+      visibility: visible;
+    }
+  }
+
+  &-text-success {
+    font-size: 2.08rem;
+    letter-spacing: 0.05rem;
+    visibility: hidden;
+
+    &.active {
+      visibility: visible;
+    }
+  }
+}
+
+.success-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 3rem 0 0 2rem;
+  display: none;
+
+  &-title {
+    font-size: 2.95rem;
+    color: rgb(29, 29, 221);
+
+    @media screen and (max-width: 450px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &-subtitle {
+    font-size: 1.7rem;
+
+    @media screen and (max-width: 450px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &.active {
+    display: block;
   }
 }
