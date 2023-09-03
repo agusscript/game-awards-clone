@@ -59,4 +59,26 @@
       background-color: rgba(255, 255, 255, 0.78);
     }
   }
+
+  @media screen and (max-width: 800px) {
+    .news-card-img {
+      transition: inherit;
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+    }
+
+    .news-card-date {
+      transition: inherit;
+      color: var(--second-orange);
+    }
+
+    .news-card-title {
+      transition: inherit;
+      color: rgb(172, 172, 172);
+    }
+
+    .news-card-button {
+      opacity: 1;
+    }
+  }
 }

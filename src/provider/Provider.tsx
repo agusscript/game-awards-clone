@@ -32,11 +32,46 @@ const data = {
       },
     },
 
-    news: {},
-
-    explore: {},
-
-    email: {},
+    news: {
+      articles: [
+        {
+          id: uuidv4(),
+          date: "August 28, 2023",
+          title: "The game awards set for December 7, 2023",
+          img: "https://github.com/agusscript/game-awards-clone/blob/main/src/assets/tga23-teaser.jpg?raw=true",
+        },
+        {
+          id: uuidv4(),
+          date: "December 16, 2022",
+          title: "The game awards hits 103 millions livestreams",
+          img: "https://github.com/agusscript/game-awards-clone/blob/main/src/assets/tga22_103.jpg?raw=true",
+        },
+        {
+          id: uuidv4(),
+          date: "December 6, 2022",
+          title: "Twitch viewer rewards during tga",
+          img: "https://github.com/agusscript/game-awards-clone/blob/main/src/assets/twitch_rewards.jpg?raw=true",
+        },
+        {
+          id: uuidv4(),
+          date: "November 16, 2022",
+          title: "The game awards: the imax experience",
+          img: "https://github.com/agusscript/game-awards-clone/blob/main/src/assets/news-img-4.jpg?raw=true",
+        },
+        {
+          id: uuidv4(),
+          date: "December 6, 2021",
+          title: "The game awards partners with truth",
+          img: "https://github.com/agusscript/game-awards-clone/blob/main/src/assets/news-img-5.jpg?raw=true",
+        },
+        {
+          id: uuidv4(),
+          date: "December 9, 2020",
+          title: "Keanu Reeves, Christopher Nolan, Gal Gadot latest presenters for the game awards",
+          img: "https://github.com/agusscript/game-awards-clone/blob/main/src/assets/news-img-6.jpg?raw=true",
+        },
+      ],
+    },
   },
 
   footer: {
