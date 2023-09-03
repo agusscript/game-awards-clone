@@ -24,6 +24,7 @@
 .content {
   max-width: 400px;
   text-align: center;
+  user-select: none;
 
   &-title {
     font-size: 6.5rem;
@@ -140,6 +141,7 @@
   width: 100%;
   padding: 3rem 0 0 2rem;
   display: none;
+  user-select: none;
 
   &-title {
     font-size: 2.95rem;

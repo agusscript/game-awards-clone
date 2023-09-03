@@ -1,0 +1,28 @@
+.footer-nav {
+  margin: 3rem 0;
+  padding: 1rem;
+
+  &-ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3.4rem;
+  }
+
+  &-a {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    color: gray;
+
+    @media screen and (max-width: 830px) {
+      color: whitesmoke;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 1.05rem;
+    }
+
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+}
