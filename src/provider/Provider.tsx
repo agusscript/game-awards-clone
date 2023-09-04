@@ -49,7 +49,7 @@ const data = {
         {
           id: uuidv4(),
           date: "December 6, 2022",
-          title: "Twitch viewer rewards during tga",
+          title: "Twitch viewer rewards during The game awards",
           img: "https://github.com/agusscript/game-awards-clone/blob/main/src/assets/twitch_rewards.jpg?raw=true",
         },
         {
@@ -67,7 +67,7 @@ const data = {
         {
           id: uuidv4(),
           date: "December 9, 2020",
-          title: "Keanu Reeves, Christopher Nolan, Gal Gadot latest presenters for the game awards",
+          title: "The game awards festival on Steam/Xbox/Geforce Now",
           img: "https://github.com/agusscript/game-awards-clone/blob/main/src/assets/news-img-6.jpg?raw=true",
         },
       ],

@@ -1,16 +1,19 @@
 .explore {
-  min-height: 100vh;
+  min-height: 800px;
   background-image: url(../../../assets/home-explore-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .explore-content {
+  margin-bottom: 4rem;
+
   .title {
-    margin: 3rem 0;
+    margin-bottom: 2rem;
     color: transparent;
     font-size: 4.6rem;
     background-image: url(../../../assets/text_mask.jpg);
@@ -46,5 +49,9 @@
     @media screen and (max-width: 430px) {
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 2rem;
   }
 }
