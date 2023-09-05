@@ -2,4 +2,14 @@
   margin-top: 92px;
   width: 100%;
   color: whitesmoke;
+  animation: smoothFade 3.5s ease-in-out;
+}
+
+@keyframes smoothFade {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }

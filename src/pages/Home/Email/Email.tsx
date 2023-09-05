@@ -1,10 +1,28 @@
 import "./Email.scss";
 import MainButton from "../../../components/common/MainButton/MainButton";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
+import ModalAttention from "../../../components/ModalAttention/ModalAttention";
 
 function Email() {
   const [visibleForm, setVisibleForm] = useState(true);
+  const [isIntersecting, setIntersecting] = useState(false);
+
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    const element = formRef.current;
+
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setIntersecting(entries[0].isIntersecting);
+      }
+    });
+
+    if (element) {
+      observer.observe(element);
+    }
+  }, []);
 
   const {
     register,
@@ -26,6 +44,7 @@ function Email() {
 
   return (
     <section className="email">
+      <ModalAttention className={`${!isIntersecting && "hidden"}`} />
       <div className="wrapper">
         <div className="container">
           <div className="content">
@@ -37,6 +56,7 @@ function Email() {
 
           <form
             className={`form ${!visibleForm && "inactive"}`}
+            ref={formRef}
             onSubmit={handleSubmit(onSubmit)}
           >
             <input className="form-input-name" type="text" placeholder="NAME" />

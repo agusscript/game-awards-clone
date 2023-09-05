@@ -17,7 +17,7 @@ function News() {
 
         <div className="grid-news-container">
           {home.news.articles.map((item) => (
-            <NewsArticle srcImg={item.img} date={item.date} title={item.title} />
+            <NewsArticle key={item.id} srcImg={item.img} date={item.date} title={item.title} />
           ))}
         </div>
 

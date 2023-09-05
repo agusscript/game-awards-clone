@@ -97,7 +97,6 @@ body {
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  animation: smoothFade 3.5s ease-in-out;
 }
 
 .wrapper {
@@ -108,13 +107,4 @@ body {
 
 .main {
   margin: 9rem 0 0;
-}
-
-@keyframes smoothFade {
-  0% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
 }
