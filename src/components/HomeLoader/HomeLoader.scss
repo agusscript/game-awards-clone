@@ -1,0 +1,55 @@
+.home-loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 2;
+
+  &-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  &-text {
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &.animation {
+    animation: homeTransition 3.5s linear;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}
+
+@keyframes homeTransition {
+  0% {
+    background-color: black;
+    opacity: 1;
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0.5;
+  }
+  85% {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.1;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+  }
+}

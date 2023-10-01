@@ -2,27 +2,4 @@
   margin-top: 92px;
   width: 100%;
   color: whitesmoke;
-
-  &-overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    animation: homeTransition 3.5s ease-in-out;
-
-    &.hidden {
-      display: none;
-    }
-  }
-}
-
-@keyframes homeTransition {
-  0% {
-    background-color: rgba(0, 0, 0, 3);
-  }
-  100% {
-    background-color: rgba(0, 0, 0, 0);
-  }
 }
